@@ -1,0 +1,40 @@
+.content {
+  height: 70px;
+}
+.content navigator {
+  display: flex;
+}
+.content navigator .left {
+  flex: 2;
+}
+.content navigator .left image {
+  width: 100%;
+  padding: 5px 10px;
+}
+.content navigator .right {
+  flex: 3;
+  color: red;
+  padding: 5px 20px;
+  margin: 0;
+  
+}
+.content navigator .right .title {
+  font-size: 13px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.content navigator .right .tab {
+  font-size: 10px;
+  display: flex;
+  margin-bottom: 0;
+}
+.content navigator .right .tab .school {
+  flex: 1;
+  padding-left: 5px;
+}
+.content navigator .right .tab .price {
+  flex: 1;
+}

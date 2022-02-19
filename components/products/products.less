@@ -1,0 +1,40 @@
+.content{
+    height: 70px;
+    navigator{
+        display: flex;
+        .left{
+            flex: 2;
+            image{
+                width: 100%;
+                padding: 5px 10px;
+            }
+        }
+        .right{
+            flex: 3;
+            padding: 5px 20px;
+            margin: 0;
+            .title{
+                font-size: 13px;
+                overflow:hidden;
+                display:-webkit-box; //将对象作为弹性伸缩盒子模型显示;           
+                text-overflow:ellipsis;//溢出部分用省略号代替   
+                -webkit-line-clamp:2; //设置文本显示两行
+                -webkit-box-orient:vertical;  //从上到下排列子元素;
+            }
+            .tab{
+                font-size: 10px;
+                display: flex;
+                margin-bottom: 0;
+                .school{
+                    flex: 1;
+                    padding-left: 5px;
+                }
+                .price{
+                    flex: 1;
+                }
+            }
+        }
+    }
+    
+    
+}

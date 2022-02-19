@@ -1,0 +1,34 @@
+<!--pages/index/index.wxml-->
+<!-- 头部 -->
+<view class="header">
+  <view class="addr">
+      <view class="left">
+        <!-- <icon class="icon-box-img" type="success" size="23"></icon> -->       
+      {{city}}
+      </view>
+  </view>
+    <view class="sousuo">
+      <view class="sousuok">
+         <input class="weui-input" auto-focus placeholder="请输入关键字"/>
+      </view>
+      <view class="sousuot" bindtap="search">
+      <icon class="icon-small" type="search" size="23"></icon>
+        
+      </view>
+      
+    </view>
+</view>
+<!-- 轮播图 -->
+<swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="1000" circular="true"> 
+    <block wx:for='{{banner}}' wx:key="key">
+          <swiper-item>
+            <image mode="widthFix" lazy-load src='{{item}}'></image>
+          </swiper-item>
+        </block>
+  </swiper>
+  <!-- 分类标签 -->
+  <tabs></tabs>
+  <!-- 内容 -->
+  <products class="con" products="{{products}}"></products>
+
+  

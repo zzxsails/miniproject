@@ -1,0 +1,12 @@
+.cls {
+  display: flex;
+}
+.cls navigator {
+  flex: 1;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+}
+.cls navigator image {
+  width: 100%;
+}

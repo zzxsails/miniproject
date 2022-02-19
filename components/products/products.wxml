@@ -1,0 +1,15 @@
+<view class="content" wx:for="{{products}}" :key="id">
+    <navigator url="../../pages/index/index">
+            <view class="left">
+                <image mode="widthFix" src="{{item.imgSrc}}"></image>
+            </view>
+            <view class="right">
+                <text class="title">{{item.title}}</text>
+                <view class="tab">
+                    <text class="school">{{item.school}}</text>
+                    <text class="price">￥{{item.price}}</text>
+                </view>
+                
+            </view>
+    </navigator>
+</view>

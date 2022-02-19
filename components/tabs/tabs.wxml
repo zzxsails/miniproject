@@ -1,0 +1,7 @@
+<view class="cls">
+    <navigator wx:for="{{classify}}" wx:key="id" url="../../pages/login/login">
+        <image mode="widthFix" src="{{item.imgsrc}}"/>
+        <text>{{item.title}}</text>
+        
+    </navigator>
+</view>

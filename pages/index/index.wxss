@@ -1,0 +1,41 @@
+/* pages/index/index.wxss */
+.header{
+  display: flex;
+  position: fixed;
+  left:0;
+  right: 0;
+  padding-top:5px;
+  padding-bottom: 10px;
+  background-color: #FFA500;
+  top: 0;
+  z-index: 100;
+}
+.addr{
+  flex: 2;
+  color: black;
+}
+.sousuo{
+  display: flex;
+  flex: 5;
+}
+.sousuok{
+  flex:5;
+}
+.sousuot{
+  flex:1;
+}
+.weui-input{
+  border: 1px solid white;
+  border-radius: 5px; 
+}
+swiper.banner{
+  width: 100%;
+  height:calc(100vw * 320 / 640);
+  margin-top:42px;
+}
+.banner image{
+  width: 100%;
+}
+/* .con{
+  color: black;
+} */

@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/visitor/visitor",
+    "pages/login/login",
+    "pages/register/register",
+    
+    "pages/lose/lose",
+    "pages/publish/publish",
+    "pages/message/message",
+    "pages/mine/mine"
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFA500",
+    "navigationBarTitleText": "易淘",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "selectedColor": "#f00",
+    "color": "#ccc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/index.png",
+        "selectedIconPath": "pages/images/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/lose/lose",
+        "iconPath": "pages/images/lose.png",
+        "selectedIconPath": "pages/images/lose1.png",
+        "text": "校圈"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "iconPath": "pages/images/add.png",
+        "selectedIconPath": "pages/images/add1.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "pages/images/mes.png",
+        "selectedIconPath": "pages/images/mes1.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "pages/images/mine.png",
+        "selectedIconPath": "pages/images/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
