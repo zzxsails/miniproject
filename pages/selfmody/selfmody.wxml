@@ -1,0 +1,22 @@
+<view class="form">
+    <form bindsubmit="submit">
+        <view class="username">
+            <label for="">用户名：</label>
+            <input name="username" value="{{username}}" disabled="{{true}}"></input>
+        </view>
+        <view class="username">
+            <label for="">密 码：</label>
+            <input type="text" name="psd" value="{{psd}}" placeholder="请输入密码"></input>
+        </view>
+        <view class="username">
+            <label for="">昵 称：</label>
+            <input type="text" name="nk" value="{{nk}}" placeholder="请输入昵称"></input>
+        </view>
+        <view class="username">
+            <label for="">手机号：</label>
+            <input type="text" name="tel" value="{{tel}}" bindblur="verify" placeholder="请输入手机号"></input>
+        </view>
+        <button form-type="submit">submit</button>
+    </form>
+</view>
+

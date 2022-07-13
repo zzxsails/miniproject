@@ -1,0 +1,50 @@
+.reg{
+    width: 100%;
+    height: 100%;
+    .bg{
+         z-index: -99;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .back{
+        position: fixed;
+        top:30rpx;
+        left: 10rpx;
+        icon{
+            font-size: 60rpx;
+            color: #056805;
+        }
+        
+
+    }
+    .reg-form{
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 30%;
+        .card{
+            padding:80rpx 10rpx;
+            background-color:white ;
+            border-radius: 5%;
+            opacity: .7;
+            view{
+                display: flex;
+                height: 100rpx;
+                justify-content: space-between;
+                padding: 0 20rpx;
+                label{
+                    flex: 1;
+                }
+                input{
+                    flex: 2;
+                    border: 1px solid #a19d9d;
+                }
+            }
+        }
+        .regbtn{
+            margin-top: 180rpx;
+            
+        }
+    }
+}

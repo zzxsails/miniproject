@@ -1,66 +1,77 @@
 // pages/login/login.js
+const app = getApp()
+const baseUrl=app.globalData.reqUrl
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    name:'',
+    password:"",
+    bgSrc:baseUrl+'static/images/loginBg.jpeg'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  //返回入口页
+  back:function(){
+    wx.navigateBack({
+      delta:1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  //获取用户名
+  getName:function(e){
+    this.setData({
+      name:e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  //获取密码
+  getPsd:function(e){
+    this.setData({
+      password:e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //login登录事件
+  login:function(){
+    let name=this.data.name
+    let password=this.data.password
+    let userinfo={'name':name,'password':password}
+    if(name!=''&&password!=''){
+      wx.request({
+        url:baseUrl+'api/login',
+        data:userinfo,
+        header:{
+          "Content-Type": "application/json" 
+        },
+        method:'get',
+        success:function(res){
+          if(res.data=='用户不存在！'){
+            wx.showToast({
+              title: '用户不存在！',
+              icon:'error'
+            })
+          }else if(res.data=='密码错误！'){
+            wx.showToast({
+              title: '密码错误！',
+              icon:'error'
+            })
+          }else{
+            let userId=res.data[0].id
+            console.log(userId)
+            wx.setStorageSync('isLogin',true)
+            wx.setStorageSync('userId',userId)
+            wx.switchTab({
+              url: '../index/index',
+            })
+            
+          }
+          
+        }
+      })
+    }else{
+      wx.showToast({
+        title: '登录信息不完整！',
+        icon:'error'
+      })
+    }
   }
+ 
 })

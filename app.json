@@ -1,14 +1,22 @@
 {
   "pages": [
+     "pages/entry/entry",
     "pages/index/index",
-    "pages/visitor/visitor",
-    "pages/login/login",
-    "pages/register/register",
+   
+    "pages/detail/detail",
     
-    "pages/lose/lose",
     "pages/publish/publish",
+    "pages/list/list",
+    "pages/login/login",
     "pages/message/message",
-    "pages/mine/mine"
+    "pages/register/register",
+    "pages/menu/menu",
+    "pages/class/class",
+    "pages/chat/chat",
+    "pages/mine/mine",
+    "pages/selfmody/selfmody",
+    "pages/payment/payment"
+    
   ],
   "requiredBackgroundModes": [
     "audio",
@@ -22,6 +30,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FFA500",
+    "navigationStyle": "default",
     "navigationBarTitleText": "易淘",
     "navigationBarTextStyle": "black"
   },
@@ -38,10 +47,10 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/lose/lose",
-        "iconPath": "pages/images/lose.png",
-        "selectedIconPath": "pages/images/lose1.png",
-        "text": "校圈"
+        "pagePath": "pages/list/list",
+        "iconPath": "pages/images/list.png",
+        "selectedIconPath": "pages/images/list1.png",
+        "text": "分类"
       },
       {
         "pagePath": "pages/publish/publish",

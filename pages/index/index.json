@@ -3,5 +3,6 @@
     "tabs":"../../components/tabs/tabs",
     "products":"../../components/products/products"
   },
-  "navigationBarTitleText":"易淘首页"
+  "navigationBarTitleText":"易淘首页",
+  "enablePullDownRefresh":true
 }

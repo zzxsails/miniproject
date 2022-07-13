@@ -1,2 +1,13 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class="message">
+   <view class="session" bindtap="goChat" wx:for="{{msg}}" :key="id" data-id="{{item.id}}">
+       <view class="tou">
+           <image class="" src="{{imgsrc}}"> 
+           </image>
+       </view>
+       <view class="con">
+           <view class="nk">{{item.nk}}</view>
+           <view class="last">{{item.lastcon}}</view>
+           <view class="time">{{item.lasttime}}</view>
+       </view>
+   </view>
+</view>

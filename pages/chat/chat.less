@@ -1,0 +1,149 @@
+.head{
+    height: 200rpx;
+    margin: 10rpx;
+    background-color: aliceblue;
+    border-radius: 5%;
+    position: fixed;
+    z-index: 10;
+    navigator{
+        display: flex;
+        .left{
+            flex: 2;
+            padding:10rpx ;
+            image{
+                width: 200rpx;
+                height:190rpx;
+                padding: 10px auto;
+            }
+        }
+        .right{
+            flex: 3;
+            padding: 5px 20px;
+            // padding-bottom:20rpx ;
+            // border: 1px solid black;
+            .title{
+                font-size: 13px;
+                overflow:hidden;
+                display:-webkit-box; //将对象作为弹性伸缩盒子模型显示;           
+                text-overflow:ellipsis;//溢出部分用省略号代替   
+                -webkit-line-clamp:2; //设置文本显示两行
+                -webkit-box-orient:vertical;  //从上到下排列子元素;
+                margin-bottom: 40rpx;
+            }
+            .tab{
+                font-size: 10px;
+                display: flex;
+                margin-bottom: 0;
+                
+                .school{
+                    flex: 1;
+                    padding-left: 5px;
+                    color: #e89025;
+                }
+                .price{
+                    flex: 1;
+                    font-size: medium;
+                    color: #f2730b;
+                }
+            }
+        }
+    }
+}
+.chat{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top:250rpx;
+    bottom: 110rpx;
+    // justify-content: space-between;
+    // margin-top: 250rpx;
+    scroll-view{
+        height: 100%;
+        width:100%;
+        .usera{
+            float: left;
+            width: 100%;
+            margin-top:20rpx;
+            .top{
+                height: 80rpx;
+                margin-left:50%;
+                color: gray;
+            }
+            .bottom{
+                width: 800rpx;
+                display: flex;
+                .toua{
+                    flex: 1;
+                    margin-right: 20rpx;
+                    image{
+                        width: 100rpx;
+                        height: 100rpx;
+                        border-radius: 50%;
+                    }
+                }
+                .content{
+                    flex: 4;
+                    background-color: #44c2e9;
+                    color: white;
+                }
+            }
+        
+        }
+        .userb{
+            margin-top:20rpx;
+            width: 100%;
+            float:right;
+            .top{
+                height: 80rpx;
+                margin-left:25%;
+                color: gray;    
+            }
+            .bottom{
+                display: flex;
+                width: 800rpx;
+                .content{
+                    margin-right: 20rpx;
+                    flex: 4;
+                    background-color: #44c2e9;
+                    color: white;
+                    
+                }
+                .toub{
+                    flex: 1;
+                    image{
+                        width: 100rpx;
+                        height: 100rpx;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            
+            
+        }
+    }
+    
+    .footer{
+        position: fixed;
+        bottom: 5rpx;
+        display: flex;
+        height: 100rpx;
+        width: 100%;
+        .left{
+           flex: 5;
+           margin:5rpx 10rpx 0 0;
+           input{
+               border: 1px solid #bebbbb;
+               height: 90rpx;
+               background:#f1eded ;
+           }
+        }
+        .btn{
+            flex: 1;
+            button{
+                margin: 20rpx 0;
+                font-size: 30rpx;
+                background-color:#f1eded;
+            }
+        }
+    }    
+}

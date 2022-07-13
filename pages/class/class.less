@@ -1,0 +1,32 @@
+.con{
+    display: flex;
+    
+    .left{       
+        padding-top: 30rpx; 
+        flex: 1;
+        font-size: 40rpx;
+        border-right: 3px solid #8cdf8c;
+        // border-radius: 15px;
+        // margin-top: 5rpx;
+        height: 100%;
+        // background-color: red;
+        text-align: center;
+        .left-item{
+            line-height: 80rpx;
+        }
+        .active{
+            border-left: 3px solid rgb(231, 171, 7);
+            border-right: 3px solid #fff;
+        }
+    }
+    .right{
+        flex: 3;
+        // background-color: green;
+        .goods{
+            text-align: center;
+            .goods_name{
+                line-height: 120rpx;
+            }
+        }
+    }
+}

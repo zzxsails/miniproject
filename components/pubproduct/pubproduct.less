@@ -1,0 +1,56 @@
+.content{
+    height: 200rpx;
+    margin: 10rpx auto;
+    navigator{
+        display: flex;
+        .left{
+            flex: 2;
+            padding:10rpx ;
+            image{
+                width: 200rpx;
+                height:200rpx;
+                padding: 10px auto;
+            }
+        }
+        .right{
+            flex: 3;
+            padding: 5px 20px;
+            // padding-bottom:20rpx ;
+            // border: 1px solid black;
+            .title{
+                font-size: 13px;
+                overflow:hidden;
+                display:-webkit-box; //将对象作为弹性伸缩盒子模型显示;           
+                text-overflow:ellipsis;//溢出部分用省略号代替   
+                -webkit-line-clamp:2; //设置文本显示两行
+                -webkit-box-orient:vertical;  //从上到下排列子元素;
+                margin-bottom: 40rpx;
+            }
+            .tab{
+                font-size: 10px;
+                display: flex;
+                margin-bottom: 0;
+                
+                .school{
+                    flex: 1;
+                    padding-left: 5px;
+                    color: #e89025;
+                }
+                .price{
+                    flex: 1;
+                    font-size: medium;
+                    color: #f2730b;
+                }
+                .del{
+                    border: 1px solid #ec3c3c;
+                    font-size: 24rpx;
+                    color: #ec3c3c;
+                    width: 30rpx;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    
+}

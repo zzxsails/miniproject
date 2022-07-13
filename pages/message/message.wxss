@@ -1,1 +1,32 @@
-/* pages/message/message.wxss */
+.message .session {
+  background: #e3f6fc;
+  border-radius: 5%;
+  margin: 20rpx 10rpx;
+  display: flex;
+  height: 130rpx;
+}
+.message .session .tou {
+  flex: 1;
+  margin-right: 30rpx;
+}
+.message .session .tou image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.message .session .con {
+  flex: 5;
+}
+.message .session .con .nk {
+  font-size: 35rpx;
+}
+.message .session .con .last {
+  color: #c5c0c0;
+  font-size: 25rpx;
+  text-indent: 2em;
+  line-height: 50rpx;
+}
+.message .session .con .time {
+  color: #a5a4a4;
+  font-size: 30rpx;
+}

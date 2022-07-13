@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "pubproduct":"../../components/pubproduct/pubproduct",
+    "products":"../../components/products/products"
+  },
+  "navigationStyle":"custom"
 }

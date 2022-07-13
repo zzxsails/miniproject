@@ -1,0 +1,60 @@
+page {
+  height: 100%;
+}
+page .top {
+  background-color: #FFA500;
+  height: 75rpx;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+page .top .input {
+  margin: 0 8rpx ;
+  background-color: white;
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 3%;
+}
+page .con {
+  display: flex;
+  height: calc(100vh-75rpx);
+  margin-top: 70rpx;
+}
+page .con .left {
+  flex: 1;
+  height: calc(100vh-75rpx);
+}
+page .con .left .left-item {
+  display: block;
+  font-size: 35rpx;
+  text-align: center;
+  margin-top: 35rpx;
+}
+page .con .left .active {
+  z-index: 10;
+  color: #FFA500;
+  border-left: 3px solid #FFA500;
+  border-right: 3px solid white;
+}
+page .con .right {
+  flex: 3;
+  height: calc(100vh-75rpx);
+}
+page .con .right .goods-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+}
+page .con .right .goods {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+page .con .right .goods .goods-list {
+  width: 28%;
+  padding: 15rpx;
+}
+page .con .right .goods .goods-list image {
+  width: 100%;
+}

@@ -1,23 +1,38 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="reg">
+    <image class="bg" src="{{bgsrc}}">
+    </image>
+    <view class="back" bindtap="back">
+        <icon class="iconfont icon-fanhui5"></icon>
+    </view>
+    <view class="reg-form">
+        <view class="card">
+            <view class="name">
+                <label>学 号：</label>
+                <input bindblur="getName" type="number" placeholder="请输入学号" />
+            </view>
+            <view class="psd">
+                <label>密 码：</label>
+                <input bindblur="getPsd" type="text" placeholder="请输入密码" />
+            </view>
+            <view class="tel">
+                <label>手机号：</label>
+                <!-- 设置失去焦点时获取input数据 -->
+                <input bindblur="getTel" type="number" placeholder="请输入手机号" />
+            </view>
+            <view class="school">
+                <label>学 校：</label>
+                <input bindblur="getSchool" type="text" placeholder="请输入学校" />
+            </view>
+            <view class="nk">
+                <label>昵 称：</label>
+                <input bindblur="getNk" type="" placeholder="请输入昵称" />
+            </view>
+        </view>
+        <view class="regbtn">
+            <button bindtap="register" size="default" type="primary">注册</button>
+        </view>
+    </view>
 </view>
+<!-- <view class="toast wx:if='{{showT==true?'hover':''}}'">
+
+</view> -->

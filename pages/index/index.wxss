@@ -1,41 +1,47 @@
-/* pages/index/index.wxss */
-.header{
+.header {
   display: flex;
   position: fixed;
-  left:0;
+  left: 0;
   right: 0;
-  padding-top:5px;
+  padding-top: 5px;
   padding-bottom: 10px;
   background-color: #FFA500;
   top: 0;
   z-index: 100;
 }
-.addr{
+.header .addr {
   flex: 2;
   color: black;
 }
-.sousuo{
+.header .addr .left {
+  display: flex;
+}
+.header .addr .left icon {
+  width: 80rpx;
+}
+.header .addr .school text {
+  margin-left: 60rpx;
+  line-height: 60rpx;
+}
+.header .sousuo {
   display: flex;
   flex: 5;
 }
-.sousuok{
-  flex:5;
+.header .sousuo .sousuok {
+  flex: 5;
 }
-.sousuot{
-  flex:1;
-}
-.weui-input{
+.header .sousuo .sousuok .weui-input {
   border: 1px solid white;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
-swiper.banner{
+.header .sousuo .sousuot {
+  flex: 1;
+}
+.banner {
   width: 100%;
-  height:calc(100vw * 320 / 640);
-  margin-top:42px;
+  height: calc(100vw * 320 / 640);
+  margin-top: 42px;
 }
-.banner image{
+.banner image {
   width: 100%;
 }
-/* .con{
-  color: black;
-} */

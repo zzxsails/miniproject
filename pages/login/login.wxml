@@ -1,2 +1,23 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="login">
+    <image class="bg" src="{{bgSrc}}" mode="scaleToFill">   
+    </image>
+    <view class="back" bindtap="back">
+        <icon class="iconfont icon-fanhui5"></icon>
+    </view>
+    <view class="login-form">
+        <view class="card">
+            <view class="name">
+                <label for="" class="label">学 号：</label>
+                <input bindblur="getName" type="number" placeholder="请输入学号" />
+            </view>
+            <view class="psd">
+                <label for="" class="label">密 码：</label>
+                <input bindblur="getPsd" type="password" placeholder="请输入密码" />
+            </view>
+        </view>
+        <view class="loginbtn">
+            <button class="" bindtap="login" size="default" type="primary">登录</button>
+        </view>
+    </view>
+</view>
+

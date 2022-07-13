@@ -1,0 +1,51 @@
+.content {
+  height: 200rpx;
+  margin: 10rpx auto;
+}
+.content navigator {
+  display: flex;
+}
+.content navigator .left {
+  flex: 2;
+  padding: 10rpx ;
+}
+.content navigator .left image {
+  width: 200rpx;
+  height: 200rpx;
+  padding: 10px auto;
+}
+.content navigator .right {
+  flex: 3;
+  padding: 5px 20px;
+}
+.content navigator .right .title {
+  font-size: 13px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 40rpx;
+}
+.content navigator .right .tab {
+  font-size: 10px;
+  display: flex;
+  margin-bottom: 0;
+}
+.content navigator .right .tab .school {
+  flex: 1;
+  padding-left: 5px;
+  color: #e89025;
+}
+.content navigator .right .tab .price {
+  flex: 1;
+  font-size: medium;
+  color: #f2730b;
+}
+.content navigator .right .tab .del {
+  border: 1px solid #ec3c3c;
+  font-size: 24rpx;
+  color: #ec3c3c;
+  width: 30rpx;
+  text-align: center;
+}

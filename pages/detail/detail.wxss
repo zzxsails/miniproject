@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .left {
+  display: flex;
+}
+.header .left .hp {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.header .left .nk {
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+.header .left .nk .school {
+  display: flex;
+  font-size: 30rpx;
+  color: #a4a4a5;
+}
+.header .left .nk .school .schBg {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 5rpx;
+}
+.header .right {
+  margin-top: 5rpx;
+}
+.header .right .atten {
+  width: 150rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  padding: 15rpx 0;
+  border: none;
+  background-color: #f7f1e8;
+}
+.con {
+  margin: 0 10rpx;
+}
+.con .price {
+  display: flex;
+  justify-content: space-between;
+}
+.con .price .time {
+  height: 50rpx;
+  margin-top: 40rpx;
+}
+.con .txt {
+  margin: 20rpx auto;
+}
+.con .pic {
+  padding: 20rpx 10rpx;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 80rpx;
+  width: 100%;
+  background-color: #f2f8f6;
+  border-top: 1px solid #e4e2de;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .icon {
+  margin-left: 30rpx;
+}
+.footer .icon icon {
+  font-size: 70rpx;
+  width: 130rpx;
+}
+.footer .icon .chat {
+  display: none;
+}
+.footer .icon .selectC {
+  color: #fc0b0b;
+}
+.footer .icon .icon-siliao:hover {
+  color: #ee8d0f;
+}
+.footer .buy {
+  margin-right: 30rpx;
+  margin-top: 5rpx;
+}
+.footer .buy button {
+  font-size: 36rpx;
+  padding: 15rpx 0;
+  background-color: #f1a644;
+  border-radius: 5% ;
+  width: 140rpx;
+  height: 70rpx;
+}

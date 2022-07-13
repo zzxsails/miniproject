@@ -1,0 +1,34 @@
+<view class="top">
+  <input class="input" type="text" value="{{inputVal}}" placeholder="搜索" bindinput="inputTyping" bindconfirm="search"  />
+</view>
+<view class="con">
+  <!-- 左侧菜单 -->
+  <scroll-view class="left" scroll-y scroll-top="">
+    <view class="left-item {{label_index===index?'active':''}}" 
+    bindtap="switchItem"
+     wx:for="{{list0}}" 
+     wx:key="{{index}}" 
+     data-item="{{item}}" 
+     data-index="{{index}}">{{item.title}}</view>
+    
+  </scroll-view>
+  <!-- 右侧菜单 -->
+  <scroll-view class="right" scrooll-y>
+    <view class="goods-title">{{list0_title}}</view>
+    <view class="goods">
+      <navigator class="goods-list" open-type="navigate"
+      url="../menu/menu" 
+      bindtap="switchright" 
+      wx:for="{{rightmenu}}" 
+      wx:key="{{index}}" data-item="{{item}}">
+        <image mode="widthFix" src="{{item.img}}" />
+        <view>{{item.name}}</view>
+      </navigator>
+      
+    </view>
+    
+
+  </scroll-view>
+
+</view>
+

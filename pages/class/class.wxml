@@ -1,0 +1,16 @@
+<!--pages/class/class.wxml-->
+<view class="con">
+    <scroll-view class="left" scroll-y scroll-top="">
+        <view class="left-item {{label_index===index?'active':''}}" 
+        bindtap="switchItem"
+        wx:for="{{class0}}" 
+        wx:key="{{index}}" 
+        data-item="{{item}}" 
+        data-index="{{index}}">{{item.title}}</view>       
+    </scroll-view>
+    <scroll-view class="right" scroll-y>
+        <view class="goods" bindtap="gain" wx:for="{{rightNames}}" wx:key="{{index}}" data-item="{{item}}">
+            <view class="goods_name">{{item}}</view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,2 +1,47 @@
 <!--pages/publish/publish.wxml-->
-<text>pages/publish/publish.wxml</text>
+<view class="all">
+    <navigator class="back" url="../index/index" open-type="switchTab">
+        取消
+    </navigator>
+    <navigator bindtap="addProduct" class="pub" url="" open-type="navigate"> 
+        发布
+    </navigator>
+    <view class="con">
+        <textarea bindblur="getDetail" class="text" name="detail" placeholder="请添加商品详情" id="" cols="30" rows="10">
+        </textarea>
+        <view class="img">
+            <view class="show_image">
+                <image mode="aspectFit" wx:for="{{srcArr}}" wx:key="index" src="{{item}}"></image>
+            </view>              
+            <view class="btn">
+                <button size="mini" plain="false" bindtap="gotoShow">上传图片</button>
+            </view>
+            
+        </view>
+        <view class="tips">
+            <text>添加标签：</text>
+            <view class="cls0">
+                <navigator bindtap="flash" class="cls" target="" url="../class/class" open-type="navigate">
+                    分类:
+                </navigator>
+                <input 	placeholder="选择商品类别" disabled="false" value="{{className}}" />
+            </view>
+            <view class="cls0">
+                <view bindtap="getSchool" class="cls1">
+                    学校:
+                </view>
+                <input 	placeholder="点击按钮获取学校名" disabled="false" value="{{school}}" />
+            </view>
+            <view class="cls1">
+                <h3>成色:</h3>
+                <input bindblur="getDegree" type="text" placeholder="请输入商品成色" value="" />
+            </view>
+            <view class="price" >
+                <!-- <icon></icon> -->
+                <text class="price_0">￥价格：</text>
+                <input bindblur="getPrice" class="priceval" type="text" placeholder="￥0.00"/>
+            </view>
+        </view>
+    </view>
+</view>
+

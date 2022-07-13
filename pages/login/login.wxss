@@ -1,1 +1,38 @@
-/* pages/login/login.wxss */
+.login .bg {
+  height: 700rpx;
+}
+.login .back {
+  position: fixed;
+  top: 30rpx;
+  left: 10rpx;
+}
+.login .back icon {
+  font-size: 80rpx;
+  color: #056805;
+}
+.login .login-form .card {
+  background-color: #f5f3efc4;
+  opacity: 0.7;
+  margin: -130rpx auto;
+  width: 80%;
+  height: 350rpx;
+  padding-top: 45rpx ;
+  border-radius: 5%;
+}
+.login .login-form .card view {
+  height: 120rpx;
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.login .login-form .card view label {
+  flex: 1;
+}
+.login .login-form .card view input {
+  flex: 2;
+  border: 1px solid beige;
+}
+.login .login-form .loginbtn {
+  margin-top: 180rpx;
+}

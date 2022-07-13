@@ -1,0 +1,30 @@
+.entry {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFA500;
+}
+.entry .title {
+  text-align: center;
+  padding-top: 300rpx;
+}
+.entry .title .tip {
+  font-size: 30rpx;
+  color: #4d4d4a;
+}
+.entry .btn {
+  display: flex;
+  margin-top: 480rpx;
+  padding: 10rpx 30rpx;
+}
+.entry .btn .login {
+  background-color: #FFA500;
+  border: 1px solid black;
+  width: 240rpx;
+  height: 100rpx;
+}
+.entry .btn .reg {
+  background-color: #FFA500;
+  border: 1px solid black;
+  width: 240rpx;
+  height: 100rpx;
+}

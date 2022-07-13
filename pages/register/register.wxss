@@ -1,19 +1,47 @@
-/**index.wxss**/
-.userinfo {
+.reg {
+  width: 100%;
+  height: 100%;
+}
+.reg .bg {
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.reg .back {
+  position: fixed;
+  top: 30rpx;
+  left: 10rpx;
+}
+.reg .back icon {
+  font-size: 60rpx;
+  color: #056805;
+}
+.reg .reg-form {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30%;
+}
+.reg .reg-form .card {
+  padding: 80rpx 10rpx;
+  background-color: white ;
+  border-radius: 5%;
+  opacity: 0.7;
+}
+.reg .reg-form .card view {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+  height: 100rpx;
+  justify-content: space-between;
+  padding: 0 20rpx;
 }
-
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.reg .reg-form .card view label {
+  flex: 1;
 }
-
-.usermotto {
-  margin-top: 200px;
+.reg .reg-form .card view input {
+  flex: 2;
+  border: 1px solid #a19d9d;
+}
+.reg .reg-form .regbtn {
+  margin-top: 180rpx;
 }

@@ -1,0 +1,56 @@
+<view class="head">
+    <navigator bindtap="goTo" data-id="{{products.id}}" url="../../pages/detail/detail" open-type="navigate" >
+            <view class="left">
+                <image mode="aspectFill" src="{{products.imgSrc}}"></image>
+            </view>
+            <view class="right">
+                <text class="title">{{products.detail}}</text>
+                <view class="tab">
+                    <text class="school">{{products.school}}</text>
+                    <text class="price">￥{{products.price}}</text>
+                </view>
+                
+            </view>
+    </navigator>
+</view>
+
+<view class="chat">
+    <scroll-view scroll-y >
+        <block wx:key wx:for='{{msgList}}' wx:for-index="index">
+            <view class="usera" wx:if='{{item.code==1}}'>
+                <view class="top">{{item.time}}</view>
+                <view class="bottom">
+                    <view class="toua">
+                        <image class="" src="{{imgsrca}}"></image>
+                    </view>
+                    <view class="content">
+                        {{item.content}}
+                    </view>
+                </view>
+                
+            </view> 
+            <view class="userb" wx:else>
+                <view class="top">{{item.time}}</view>
+                <view class="bottom">
+                    <view class="content">
+                        {{item.content}}
+                    </view>
+                    <view class="toub">
+                        <image class="" src="{{imgsrcb}}"></image>
+                    </view>
+                </view>
+                
+            </view>
+        </block>
+    </scroll-view>
+    <view class="footer" style='bottom: {{inputBottom}}'>
+        <view class="left">
+            <input bindblur='getValue' value="{{inputValue}}" type="text" />
+        </view>
+        <view class="btn">
+            <button bindtap="sendmsg" size="mini" plain="true">发送</button>
+        </view>
+    </view>
+
+    
+</view>

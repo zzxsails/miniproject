@@ -1,0 +1,40 @@
+<view>
+    <view class="header">
+        <view class="left" bindtap="goMine">
+            <image mode="widthFix" class="hp" src="{{headimg}}" />
+            <view class="nk">
+                <h4>{{nickname}}</h4>
+                <view class="school">
+                    <image class="schBg" src="{{schbadge}}" />
+                    <i>{{school}}</i>
+                    </view>
+            </view>
+        </view>
+        <view class="right">
+            <button class="atten" plain="false" >+关注</button>
+        </view>
+    </view>
+    <view class="con">
+        <view class="price">
+            <view>
+                <view>￥{{price}}</view>
+                <view>{{degree}}</view>
+            </view>
+            <view class="time">{{time}}</view>
+        </view>
+        <view class="txt">{{detail}}</view>   
+        <view class="pic" wx:for="{{imgsrcs}}" :key="index">
+            <image mode="aspectFill" src="{{item}}" />
+        </view>
+        
+    </view>
+    <view class="footer">
+        <view class="icon">
+            <icon bindtap="collect" class="iconfont icon-shoucang {{selectId==0?'selectC':''}} " data-index="0"></icon>
+            <icon bindtap="goChat" class="iconfont icon-siliao {{chat?'':'chat'}}" ></icon>
+        </view>
+        <view class="buy" bindtap="payment">
+            <button>购买</button>
+        </view>
+    </view>
+</view>

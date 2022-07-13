@@ -1,1 +1,83 @@
-/* pages/publish/publish.wxss */
+.all {
+  margin: 10rpx;
+  padding: 0;
+}
+.all .back {
+  width: 150rpx;
+  float: left;
+  display: inline;
+}
+.all .pub {
+  width: 150rpx;
+  float: right;
+  display: inline;
+  text-align: center;
+  border: 1px solid #FFA500;
+  border-radius: 5px;
+  background-color: #FFA500;
+}
+.all .con .text {
+  padding-top: 50rpx;
+  border: 1px solid black;
+}
+.all .con .img .show_image {
+  width: 80%;
+  margin: 10rpx auto;
+}
+.all .con .img .show_image image {
+  border: 1px solid black;
+}
+.all .con .img .btn {
+  font-size: 13rpx;
+  color: green;
+}
+.all .con .tips {
+  margin-top: 30rpx;
+}
+.all .con .tips .cls0 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+}
+.all .con .tips .cls0 .cls {
+  padding: 10rpx;
+  border: 1px solid #FFA500;
+  border-radius: 15%;
+  width: 100rpx;
+}
+.all .con .tips .cls0 .cls1 {
+  padding: 10rpx;
+  border: 1px solid #FFA500;
+  border-radius: 15%;
+  width: 100rpx;
+}
+.all .con .tips .cls0 input {
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid #dacfcf;
+}
+.all .con .tips .cls1 {
+  margin-top: 25rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.all .con .tips .cls1 h3 {
+  border: 1px solid #f8f1f1;
+  background-color: #f8f1f1;
+  padding: 10rpx;
+  border-radius: 15%;
+}
+.all .con .tips .cls1 input {
+  border: 1px solid #dacfcf;
+}
+.all .con .tips .price {
+  margin-top: 30rpx;
+  text-align: right;
+}
+.all .con .tips .price .price_0 {
+  float: left;
+}
+.all .con .tips .price .priceval {
+  float: right;
+}

@@ -1,2 +1,64 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="mine">
+    <view class="bg">
+        <image src="{{bgSrc}}" mode="scaleToFill">   
+        </image>
+    </view>
+    <view class="con">
+        <view class="self">
+            <image bindtap="modytou" class="tou" src="{{headimg}}"></image>
+            <text class="nk">{{userInfo.nickname}}</text>
+            <text bindtap="gomody" class="modify">资料修改></text>
+        </view>
+        <view class="school">
+            <image class="localI" src="{{userInfo.schbadge}}"></image>
+            <text class="localT">{{userInfo.school}}</text>
+        </view>
+        <view class="id">
+            <text>会员名:{{userInfo.username}}</text>
+        </view>
+    </view>
+    <view class="product">
+        <view class="title">
+            <view bindtap="changeIndex" class="{{navIndex==0?'titC':''}}" data-index="0">
+               <icon class="iconfont icon-fabu" bindtap="getpubish"></icon>
+               <text class="tit">发布</text>
+            </view>
+            <view bindtap="changeIndex" class="{{navIndex==1?'titC':''}}" data-index="1">
+                <icon class="iconfont icon-shoucang" bindtap="getcollect"></icon>
+                <text class="tit">收藏</text>
+            </view>
+            <view bindtap="changeIndex" class="{{navIndex==2?'titC':''}}" data-index="2">
+                <icon class="iconfont icon-maichu"></icon>
+                <text class="tit">卖出</text>
+            </view>
+            <view bindtap="changeIndex" class="{{navIndex==3?'titC':''}}" data-index="3">
+                <icon class="iconfont icon-goumai"></icon>
+                <text class="tit">买到</text>
+            </view>
+            <view bindtap="changeIndex" class="{{navIndex==4?'titC':''}}" data-index="4">
+                <icon class="iconfont icon-pingjia"></icon>
+                <text class="tit">评价</text>
+            </view>
+        </view>
+        <view class="content">
+            <view wx:if="{{navIndex==0}}" class="pub">
+                <pubproduct products="{{products}}"></pubproduct>
+            </view>
+            <view wx:elif="{{navIndex==1}}" class="col">
+                <products products="{{products}}"></products>
+            </view>
+            <view wx:elif="{{navIndex==2}}" class="sell" >卖出</view>
+            <view wx:elif="{{navIndex==3}}" class="pay">买出</view>
+            <view wx:else="{{navIndex==4}}" class="eva">
+                <view class="tou">
+                    <image src="../images/tom.jpg"></image>
+                </view>
+                <view class="detail">
+                    <view class="nk">鸳鸯猫眼</view>
+                    <view class="con"> 希望你喜欢，祝好!</view>
+                    <view class="time">2022-03-12 13:35:30</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

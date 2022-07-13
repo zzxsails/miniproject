@@ -5,17 +5,14 @@ App({
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+
+    // var name=wx.getStorageSync('username')
+    // this.globalData.isLogin=name
+    // console.log(this.globalData.isLogin)
   },
   globalData: {
-    userInfo: null,
-    reqUserUrl:'http://localhost:1337/Users/',
-    reqUrl:'http://localhost:1337/'
+    isLogin:'false',
+    username:'',
+    reqUrl:'http://localhost:3000/'
   }
 })

@@ -1,0 +1,17 @@
+<view class="content" wx:for="{{products}}" :key="id" >
+    <!-- 添加data-id可以通过点击事件e获取商品id值 -->
+    <navigator  data-id="{{item.id}}" url="../../pages/detail/detail" open-type="navigate" >
+            <view bindtap="goTo" class="left">
+                <image mode="aspectFill" src="{{item.imgSrc}}"></image>
+            </view>
+            <view class="right">
+                <text class="title">{{item.detail}}</text>
+                <view class="tab">
+                    <text class="school">{{item.school}}</text>
+                    <text class="price">￥{{item.price}}</text>
+                    <text class="del" data-id="{{item.id}}" hover-stop-propagation catchtap="del">删除</text>
+                </view>
+                
+            </view>
+    </navigator>
+</view>

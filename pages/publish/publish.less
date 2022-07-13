@@ -1,0 +1,103 @@
+.all{
+    margin: 10rpx;
+    padding: 0;
+    .back{
+        width: 150rpx;
+        float: left;
+        display: inline;
+        
+        // border: 1px solid #ebe5e5;
+        // border-radius: 5px;
+        // background-color: #ebe5e5;
+    }
+    .pub{
+        width: 150rpx;
+        float: right;      
+        display: inline;
+        text-align: center;
+        border: 1px solid #FFA500;
+        border-radius: 5px;
+        background-color: #FFA500;
+    }
+    // 主要内容
+    .con{
+        // 商品详情
+        .text{
+            padding-top: 50rpx;
+            border: 1px solid black;
+        }
+        // 选择图片
+        .img{
+            .show_image{
+                width: 80%;
+                margin: 10rpx auto;
+                image{
+                    border:1px solid black;
+                }
+            }
+            .btn
+            {
+               font-size: 13rpx;
+               color: green;
+            }
+        }
+        // 添加标签
+        .tips{
+            margin-top: 30rpx;
+            .cls0{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 30rpx;
+                // width: 130rpx;
+                margin-left: 50rpx;
+                .cls{
+                    padding: 10rpx;
+                    border: 1px solid #FFA500;
+                    border-radius: 15%;
+                    width: 100rpx;
+                }
+                .cls1{
+                    padding: 10rpx;
+                    border: 1px solid #FFA500;
+                    border-radius: 15%;
+                    width: 100rpx;
+                }
+                input{
+                    margin: auto;
+                    text-align: center;
+                    border-bottom: 1px solid #dacfcf;
+                }
+            }
+            .cls1{
+                margin-top: 25rpx;
+                // margin-left: 45rpx;
+                display: flex;
+                justify-content: space-around;
+                h3{
+                    border: 1px solid #f8f1f1;
+                    background-color: #f8f1f1;
+                    padding: 10rpx;
+                    border-radius: 15%;
+                   
+                }
+                input{
+                    border: 1px solid #dacfcf;
+                    
+                }
+            }
+            .price{
+                margin-top: 30rpx;
+                text-align: right;
+                .price_0{
+                    float: left;
+                //    background-color: red; 
+                }
+                .priceval{
+                    float: right;
+                    // background-color: green;
+                    
+                }
+            }
+        }
+    }
+}

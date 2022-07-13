@@ -1,0 +1,102 @@
+.mine{
+    .bg{
+        position: relative;
+        image{
+            height: 500rpx;
+            position: absolute;
+            z-index: -99;
+        }
+    }
+    .con{
+        .self{
+            display: flex;
+            .tou{
+                width: 250rpx;
+                height: 250rpx;
+                border-radius: 50%;
+                margin-top: 350rpx;
+            }
+            .nk{
+                margin-top: 530rpx;
+                margin-left: 70rpx;
+                font-family: cursive;
+                font-size: large;
+            }
+            .modify{
+                margin-top: 480rpx;
+                margin-left: 80rpx;
+                border: 1px solid green;
+                height: 50rpx;
+            }
+        }
+        .school{
+            display: flex;
+            margin-top: 30rpx;
+            font-size: 35rpx;
+
+            .localI{
+                width: 50rpx;
+                height: 50rpx;
+                padding: 0 20rpx 0 50rpx;
+            }
+        }
+        .id{
+            margin: 30rpx 0 50rpx 50rpx;
+            font-size: 30rpx;
+        }
+    }
+    .product{
+        border-top: 1px solid #bbbbb6;
+        padding-top: 20rpx;
+        .title{
+            display: flex;
+            justify-content: space-around;
+            view{
+                width: 60rpx;
+                // align-content: center;
+                icon{
+                    font-size: 60rpx;
+                }
+                .tit{
+                    font-size: 30rpx;
+                }
+            }
+            .titC{
+                padding-bottom: 5rpx;
+                border-bottom: 2px solid #FFA500;
+                color: #FFA500;
+            }
+        }
+        .content{
+            margin-top: 10rpx;
+            .eva{
+                height: 200rpx;
+                display: flex;
+                margin:10rpx 5rpx ;
+                .tou{
+                    flex: 1;
+
+                    image{
+                        width: 100rpx;
+                        height: 100rpx;
+                        border-radius: 50%;
+                    }  
+                }
+                .detail{
+                    flex: 4;
+                    .nk{
+                        color: gray;
+                    }
+                    .con{
+                        font-size: 30rpx;
+                        line-height: 60rpx;
+                    }
+                    .time{
+                        font-size: 24rpx;
+                        color: #a19d9d;
+                    }
+                }
+            }
+        }
+    }
+}

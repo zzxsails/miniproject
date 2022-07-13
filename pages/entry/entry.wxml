@@ -1,0 +1,18 @@
+<view class="entry">
+    <view class="title">
+        <image class="logo" src="../images/title.PNG" mode="widthFix">
+        </image>
+        <text class="tip">
+            校园二手商品交易平台
+        </text>
+    </view>
+    <view class="btn">
+        <button class="login"  bindtap="login">
+            登录
+        </button>
+        <button class="reg" bindtap="reg">
+            注册
+        </button>
+    </view>
+</view>
+

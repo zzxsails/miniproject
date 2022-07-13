@@ -1,0 +1,7 @@
+
+
+<view class="pro">
+    <products products="{{products}}"></products>
+</view>
+
+

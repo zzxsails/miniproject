@@ -1,6 +1,11 @@
 /**app.wxss**/
 @import "components/tabs/tabs.wxss";
 
+/* 引入阿里图库图标 */
+@import "styles/iconfont.wxss";
+
+
+/* 全局样式 */
 .container {
   height: 100%;
   display: flex;

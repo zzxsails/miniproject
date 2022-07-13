@@ -1,1 +1,95 @@
-/* pages/mine/mine.wxss */
+.mine .bg {
+  position: relative;
+}
+.mine .bg image {
+  height: 500rpx;
+  position: absolute;
+  z-index: -99;
+}
+.mine .con .self {
+  display: flex;
+}
+.mine .con .self .tou {
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  margin-top: 350rpx;
+}
+.mine .con .self .nk {
+  margin-top: 530rpx;
+  margin-left: 70rpx;
+  font-family: cursive;
+  font-size: large;
+}
+.mine .con .self .modify {
+  margin-top: 480rpx;
+  margin-left: 80rpx;
+  border: 1px solid green;
+  height: 50rpx;
+}
+.mine .con .school {
+  display: flex;
+  margin-top: 30rpx;
+  font-size: 35rpx;
+}
+.mine .con .school .localI {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 0 20rpx 0 50rpx;
+}
+.mine .con .id {
+  margin: 30rpx 0 50rpx 50rpx;
+  font-size: 30rpx;
+}
+.mine .product {
+  border-top: 1px solid #bbbbb6;
+  padding-top: 20rpx;
+}
+.mine .product .title {
+  display: flex;
+  justify-content: space-around;
+}
+.mine .product .title view {
+  width: 60rpx;
+}
+.mine .product .title view icon {
+  font-size: 60rpx;
+}
+.mine .product .title view .tit {
+  font-size: 30rpx;
+}
+.mine .product .title .titC {
+  padding-bottom: 5rpx;
+  border-bottom: 2px solid #FFA500;
+  color: #FFA500;
+}
+.mine .product .content {
+  margin-top: 10rpx;
+}
+.mine .product .content .eva {
+  height: 200rpx;
+  display: flex;
+  margin: 10rpx 5rpx ;
+}
+.mine .product .content .eva .tou {
+  flex: 1;
+}
+.mine .product .content .eva .tou image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.mine .product .content .eva .detail {
+  flex: 4;
+}
+.mine .product .content .eva .detail .nk {
+  color: gray;
+}
+.mine .product .content .eva .detail .con {
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.mine .product .content .eva .detail .time {
+  font-size: 24rpx;
+  color: #a19d9d;
+}
