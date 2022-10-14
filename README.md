@@ -1,2 +1,2 @@
 # miniproject
-校园二手交易平台小程序
+js,Campus second-hand goods trading,Wechat mini program,node,express
